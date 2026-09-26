@@ -1,0 +1,19 @@
+name: HealthKitExporter
+options:
+  bundleIdPrefix: com.2ez4jz
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  HealthKitExporter:
+    type: application
+    platform: iOS
+    sources:
+      - HealthKitExporter
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.2ez4jz.healthkitexporter
+        CODE_SIGN_ENTITLEMENTS: HealthKitExporter/HealthKitExporter.entitlements
+        INFOPLIST_FILE: HealthKitExporter/Info.plist
+        SWIFT_VERSION: 5.9
+    scheme:
+      testTargets: []
